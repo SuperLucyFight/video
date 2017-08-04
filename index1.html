@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  　　<meta charset="UTF-8">
+  　　<title>video</title>
+
+  　　<!-- 引用video-js.css样式文件 -->
+  　　<link rel="stylesheet" type="text/css" href="video-js-5.8.5/video-js.css">
+</head>
+<body>
+
+<!-- 引用videojs-ie8.js以及video.js文件 -->
+<script src="https://cdn.bootcss.com/video.js/5.8.5/ie8/videojs-ie8.js"></script>
+<link href="https://cdn.bootcss.com/video.js/5.8.5/alt/video-js-cdn.min.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/video.js/5.8.5/video.min.js"></script>
+<!-- 这里引用的是flash的swf文件（必须） -->
+<script type="text/javascript">
+  videojs.options.flash.swf = 'https://cdn.bootcss.com/video.js/5.8.5/video-js.swf';
+</script>
+
+<!-- class是引用的样式以及皮肤，宽高自定，controls为播放控件栏，data-setup是指定默认播放方式 -->
+
+<video class="video-js" width="800" height="400" controls data-setup='{"techOrder": ["flash", "html5"]}' >
+
+  　　<!-- source的type属性规定媒体资源的 MIME 类型（不清楚就百度下） -->
+  　　<source src="http://7xpbjt.media1.z0.glb.clouddn.com/video11.mp4" type="video/mp4">
+</video>
+</body>
+</html>
